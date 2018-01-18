@@ -1009,7 +1009,7 @@ $.ui.plugin.add( "draggable", "opacity", {
 $.ui.plugin.add( "draggable", "scroll", {
 	start: function( event, ui, i ) {
 		if ( !i.scrollParentNotHidden ) {
-			i.scrollParentNotHidden = i.helper.scrollParent( false );
+			i.scrollParentNotHidden = i.element.scrollParent( false );
 		}
 
 		if ( i.scrollParentNotHidden[ 0 ] !== i.document[ 0 ] &&
